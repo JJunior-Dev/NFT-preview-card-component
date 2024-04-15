@@ -23,8 +23,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 ### Links
 
 - LinkedIn - [Jailton Junior](https://www.linkedin.com/in/dev-jjunior/)
-- Live Site URL: [Live site URL]()
-- Solution URL: [Solution URL]()
+- Live Site URL - [GitHub Pages](https://jjunior-dev.github.io/NFT-preview-card-component/)
+- Solution URL - [Frontend Mentor](https://www.frontendmentor.io/solutions/nft-preview-card-component-solution-enjSelTHHQ)
 
 ## My process
 

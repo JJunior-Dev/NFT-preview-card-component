@@ -4,6 +4,7 @@
     --primary-soft: hsl(215, 51%, 70%);
     --primary-medium: hsl(178, 100%, 50%);
     --neutral-dark: hsl(217, 54%, 11%);
+    --neutral-dark-shadow: hsl(217, 54%, 8%);
     --neutral-medium: hsl(216, 50%, 16%);
     --neutral-soft: hsl(215, 32%, 27%);
     --neutral-white: hsl(0, 0%, 100%);
@@ -34,6 +35,7 @@ body {
 }
 
 .card {
+    box-shadow: 0 0 30px 20px var(--neutral-dark-shadow);
     background-color: var(--neutral-medium);
     max-width: 346px;
     padding: 20px;
