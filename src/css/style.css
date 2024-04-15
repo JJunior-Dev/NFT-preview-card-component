@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --primary-soft: hsl(215, 51%, 70%);
+    --primary-medium: hsl(178, 100%, 50%);
+    --neutral-dark: hsl(217, 54%, 11%);
+    --neutral-medium: hsl(216, 50%, 16%);
+    --neutral-soft: hsl(215, 32%, 27%);
+    --neutral-white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--neutral-dark);
+}
+
+.container {    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.card {
+    background-color: var(--neutral-medium);
+    max-width: 346px;
+    padding: 20px;
+    border-radius: 15px;
+    color: var(--primary-soft);
+}
+
+.card .image-link .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card .image-link {
+    position: relative;
+    display: flex;
+}
+
+.card .image-link::before {
+    content: '';
+    background-color: cyan;
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.card .image-link::after {
+    content: '';
+    background: url(../src/images/icon-view.svg) no-repeat center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.card .image-link:hover::before {
+    opacity: 0.4;
+}
+
+.card .image-link:hover::after {
+    opacity: 1;
+}
+
+.card .title-link .title {
+    color: var(--neutral-white);    
+    padding-top: 20px;
+    font-size: 22px;
+}
+
+.card .title-link .title:hover {
+    color: var(--primary-medium);
+}
+
+.card .text {
+    font-size: 18px;
+    padding-top: 20px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.card .offer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card .offer .price {
+    color: var(--primary-medium);
+    display: flex;
+}
+
+.card .offer .price::before {
+    content: '';
+    background: url(../src/images/icon-ethereum.svg) no-repeat center;
+    display: inline-block;
+    height: 20px;
+    width: 11px;
+    margin-right: 8px;
+}
+
+.card .offer .time-left {
+    display: flex;
+}
+
+.card .offer .time-left::before {
+    content: '';
+    background:  url(../src/images/icon-clock.svg) no-repeat center;
+    display: inline-block;
+    height: 20px;
+    width: 14px;
+    margin-right: 8px;
+}
+
+.card .profile {
+    display: flex;
+    align-items:center ;
+    padding-top: 20px;
+    border-top: 1px solid var(--neutral-soft);
+}
+
+.card .profile .avatar {
+    border: white solid 1px;
+    border-radius: 50%;
+    width: 33px;
+}
+
+.card .profile .creator {
+    padding-left: 20px;
+}
+
+.card .profile .creator .name {
+    color: var(--neutral-white);
+}
+
+.card .profile .creator .name:hover {
+    color: var(--primary-medium);
+}
+
+.attribution { font-size: 11px; text-align: center; color: var(--primary-soft);}
+.attribution a { color: var(--neutral-white) }
